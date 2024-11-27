@@ -6,3 +6,6 @@ Initial project setup completed. Initiated the project with npm init and install
 
 # progress
 Update add() function to work on string like "" (0), "5"(5), "1,2,3"(6) and ""1\n2,3" (6)
+
+# Custom
+Functionality to add custom delimiters also added. String like "//;\n1;2" will return 3.
