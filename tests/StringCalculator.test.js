@@ -9,4 +9,8 @@ describe("StringCalculator", () => {
     const calculator = new StringCalculator();
     expect(calculator.add("5")).toBe(5);
   });
+  test("returns the sum of comma-separated numbers", () => {
+    const calculator = new StringCalculator();
+    expect(calculator.add("1,2,3")).toBe(6);
+  });
 });
