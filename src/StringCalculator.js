@@ -1,6 +1,7 @@
 class StringCalculator {
   add(numbers) {
-    return 0; // Initial implementation to pass the first test
+    if (!numbers) return 0;
+    return parseInt(numbers, 10);
   }
 }
 
