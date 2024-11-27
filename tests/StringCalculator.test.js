@@ -13,4 +13,8 @@ describe("StringCalculator", () => {
     const calculator = new StringCalculator();
     expect(calculator.add("1,2,3")).toBe(6);
   });
+  test("handles newlines as separators", () => {
+    const calculator = new StringCalculator();
+    expect(calculator.add("1\n2,3")).toBe(6);
+  });
 });
