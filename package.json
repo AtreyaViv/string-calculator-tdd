@@ -1,0 +1,22 @@
+{
+  "name": "string-calculator-tdd",
+  "version": "1.0.0",
+  "description": "A simple String Calculator built with JavaScript. It takes a string of numbers and returns their sum.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtreyaViv/string-calculator-tdd.git"
+  },
+  "author": "Vivek Atreya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtreyaViv/string-calculator-tdd/issues"
+  },
+  "homepage": "https://github.com/AtreyaViv/string-calculator-tdd#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
