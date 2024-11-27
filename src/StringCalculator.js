@@ -1,7 +1,10 @@
 class StringCalculator {
   add(numbers) {
     if (!numbers) return 0;
-    return parseInt(numbers, 10);
+    return numbers
+      .split(",")
+      .map(Number)
+      .reduce((sum, n) => sum + n, 0);
   }
 }
 
