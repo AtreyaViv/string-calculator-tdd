@@ -10,10 +10,16 @@ class StringCalculator {
       numbers = numbers.substring(delimiterEnd + 1);
     }
 
-    return numbers
+    const parsedNumbers = numbers
       .split(new RegExp(`[${delimiters.join("")}]`))
-      .map(Number)
-      .reduce((sum, n) => sum + n, 0);
+      .map(Number);
+
+    const negatives = parsedNumbers.filter((n) => n < 0);
+    if (negatives.length) {
+      throw new Error(`Negative numbers not allowed: ${negatives.join(", ")}`);
+    }
+
+    return parsedNumbers.reduce((sum, n) => sum + n, 0);
   }
 }
 
